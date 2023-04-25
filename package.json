@@ -2,9 +2,10 @@
   "name": "a04-lucyconway10",
   "version": "1.0.0",
   "description": "a04 module",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node server.js --port=5555",
+    "start": "nodemon server.js --port=6000"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a04-lucyconway10/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a04-lucyconway10#readme"
+  "homepage": "https://github.com/comp426-2023-spring/a04-lucyconway10#readme",
+"dependencies": {
+  "express": "^4.18.2",
+  "minimist": "^1.2.8",
+  "nodemon": "^2.0.22"
+},
+  "type": "module"
 }
